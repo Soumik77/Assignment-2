@@ -1,0 +1,447 @@
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter&family=Open+Sans&family=Poppins:wght@500;700&family=Roboto:ital,wght@0,500;1,700&family=Work+Sans:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Agbalumo&family=Inter&family=Open+Sans&family=Poppins:wght@500;700&family=Roboto:ital,wght@0,500;1,700&family=Work+Sans:wght@400;500;700&display=swap');
+ :root {
+    --primary-color: rgba(255, 144, 14, 0.10);
+    --heading-color: #131313;
+    --nav-color: #424242;
+    --button-color: #FF900E;
+    --footer-color: #FFF4E7;
+}
+
+* {
+    font-family: 'Work Sans';
+    margin: 0px;
+    padding: 0px;
+}
+
+@keyframes sliding {
+    0% {
+        background-color: burlywood;
+        left: 0px;
+        top: 0px;
+        transform: scale(0.25);
+    }
+    25% {
+        left: 25px;
+        top: 25px;
+        transform: scale(0.5);
+    }
+    50% {
+        left: 50px;
+        top: 50px;
+        transform: scale(0.75);
+    }
+    100% {
+        left: 100px;
+        top: 0px;
+        transform: scale(1.0);
+    }
+}
+
+
+/* Nav section start */
+
+.header-section {
+    background-color: var(--primary-color);
+}
+
+.header-section h3 {
+    font-size: 45px;
+    color: var(--heading-color);
+    font-weight: 700;
+}
+
+.nav {
+    display: flex;
+    align-items: center;
+    padding-top: 50px;
+    gap: 400px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+.nav-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav-item li {
+    list-style: none;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+/* Nav section End */
+
+
+/* header section banner part start */
+
+.banner-section {
+    margin-top: 102px;
+}
+
+.banner-section .section-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin-left: 320px;
+    width: 750px;
+    height: auto;
+    gap: 32px;
+}
+
+.heading {
+    font-size: 62px;
+}
+
+.banner-section .section-info .info {
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--nav-color);
+}
+
+.btn-primary {
+    width: 180px;
+    height: 64px;
+    border-radius: 8px;
+    background-color: var(--button-color);
+    color: white;
+    border: 0px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.banner-image {
+    text-align: center;
+    margin-top: 50px;
+    padding-bottom: 45px;
+}
+
+.banner-image img {
+    width: 1300px;
+    height: auto;
+}
+
+
+/* feature list  */
+
+.feature-list {
+    margin-top: 85px;
+    display: flex;
+    gap: 70px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.images {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 24px;
+    grid-row-gap: 24px;
+    margin-left: 110px;
+}
+
+.images img {
+    width: 342px;
+    height: 342px;
+    border-radius: 8px;
+}
+
+.feature-list .description {
+    padding-right: 100px;
+}
+
+.description h2 {
+    font-size: 45px;
+    font-weight: 700;
+}
+
+.description h2 .first {
+    color: var(--heading-color);
+    font-weight: 500;
+}
+
+.description h2 .last {
+    color: var(--button-color);
+}
+
+.description .para {
+    margin-top: 24px;
+    font-size: 16px;
+    font-weight: 400;
+    color: var(--nav-color);
+    margin-bottom: 32px;
+}
+
+
+/* Experience Section */
+
+.experience-section {
+    margin-top: 130px;
+    display: flex;
+    gap: 120px;
+    padding-left: 100px;
+    align-items: center;
+}
+
+.experience-section .ex-header {
+    font-size: 34px;
+    color: var(--heading-color);
+    text-align: left;
+    padding-left: 18px;
+    padding-right: 36px;
+    border-left: 2px solid var(--button-color);
+}
+
+.experience-section .important-para {
+    margin-top: 20px;
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 28px;
+}
+
+.experience-section .box-1 {
+    padding: 26px;
+    border-radius: 8px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    margin-bottom: 18px;
+}
+
+.experience-section .box-1 h4 {
+    font-size: 16px;
+}
+
+.experience-section .box-1 p {
+    font-size: 14px;
+}
+
+.image-part {
+    width: 1200px;
+    height: auto;
+    background-image: url('../images/architect.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-right: 150px;
+}
+
+.experience-section .experience {
+    width: 220px;
+    height: 90px;
+    background-color: var(--button-color);
+    color: white;
+    text-align: center;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-bottom: 0px;
+    text-align: center;
+    align-items: center;
+    margin-top: 690px;
+    margin-left: -40px;
+}
+
+.experience-section .experience h2 {
+    font-size: 50px;
+    font-weight: 700;
+}
+
+.experience-section .experience p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+
+/* personal blog */
+
+.personal-blog {
+    margin-top: 130px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 20px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.personal-blog .blogs {
+    padding: 30px;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.06);
+    border-radius: 6px;
+}
+
+.personal-blog .blogs h4 {
+    font-size: 20px;
+}
+
+.personal-blog .blogs p {
+    font-size: 14px;
+    text-align: justify;
+    margin-top: 10px;
+}
+
+
+/* Awards-info */
+
+.award-info {
+    margin-top: 130px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.award-info .awards {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    padding: 40px 25px;
+    align-items: center;
+    border: 1px solid var(--button-color);
+    border-radius: 8px;
+    animation: sliding 1s ease-in-out infinite alternate;
+    animation-play-state: running;
+}
+
+.award-info .awards .award-info .awards img {
+    width: 40px;
+    height: 40px;
+}
+
+
+/* sponsorship */
+
+.sponsorship {
+    margin-top: 130px;
+}
+
+.sponsorship h3 {
+    text-align: center;
+    font-size: 32px;
+    font-weight: 700;
+    color: var(--heading-color);
+}
+
+.sponsorship p {
+    text-align: center;
+    font-size: 16px;
+    margin-top: 20px;
+    color: var(--nav-color);
+}
+
+.sponsorship .logo {
+    margin-top: 40px;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.sponsorship .logo img {
+    height: 40px;
+    width: 120px;
+    filter: invert(50%);
+}
+
+
+/* footer section */
+
+footer {
+    margin-top: 130px;
+    background-color: var(--footer-color);
+    padding-top: 38px;
+    padding-bottom: 38px;
+}
+
+footer p {
+    text-align: center;
+    font-size: 16px;
+}
+
+
+/* Media Query Starts */
+
+@media screen and (max-width:576px) {
+    .header-section h3 {
+        font-size: 32px;
+    }
+    .nav {
+        flex-direction: column;
+        gap: 18px;
+        padding: 0px;
+        padding-top: 50px;
+    }
+    .nav-item {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .heading {
+        font-size: 32px;
+    }
+    .banner-image img {
+        width: 80%;
+        border-radius: 8px;
+    }
+    .banner-section {
+        margin-top: 60px;
+    }
+    .banner-section .section-info {
+        margin-right: 5rem;
+        margin-left: 3.2rem;
+        width: 80%;
+    }
+    .btn-primary {
+        font-size: 16px;
+        height: 50px;
+    }
+    .feature-list {
+        flex-direction: column-reverse;
+    }
+    .feature-list .description {
+        padding-right: 0px;
+        text-align: center;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .images {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 0px;
+    }
+    .experience-section {
+        flex-direction: column;
+        padding: 40px;
+        gap: 60px;
+    }
+    .image-part {
+        width: 95%;
+        height: auto;
+        background-repeat: no-repeat;
+        background-size: contain;
+        margin-left: 170px;
+    }
+    .experience-section .experience {
+        margin-top: 125%;
+    }
+    .personal-blog {
+        grid-template-columns: repeat(1, 1fr);
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .award-info {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin-left: 40px;
+        margin-right: 40px;
+    }
+    .sponsorship .logo {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+    }
+    .sponsorship {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
